@@ -11,10 +11,8 @@ def get_time(course, section):
 
             if en - st == 1:
                 lst += [Slot(row['Day'], st)]
-
             elif en - st == 2:
                 lst += [Slot(row['Day'], st), Slot(row['Day'], st + 1)]
-
             elif en - st == 3:
                 lst += [Slot(row['Day'], st), Slot(row['Day'], st + 1), Slot(row['Day'], st + 2)]
 
