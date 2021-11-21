@@ -1,6 +1,6 @@
 import cfg
 
-from FileHandling.section_capacity_input import get_course_section_capacity_df
+from file_handling.section_capacity_input import get_course_section_capacity_df
 
 
 def main():
