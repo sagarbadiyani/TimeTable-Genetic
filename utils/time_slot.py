@@ -1,10 +1,10 @@
-from cfg import tt_parsed_df
 from cfg import Slot
+import cfg
 
 
 def get_time(course, section):
     lst = []
-    for idx, row in tt_parsed_df.iterrows():
+    for idx, row in cfg.tt_parsed_df.iterrows():
         if row['Course'] == course and row['Section'] == section:
             st = int(row['Start'][0:2])
             en = int(row['End'][0:2])

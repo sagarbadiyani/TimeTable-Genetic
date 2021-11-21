@@ -7,9 +7,6 @@ course_list_all = ['BITS F110 P', 'CHEM F110 P', 'PHY F110 P', 'MATH F113 L', 'M
 
 
 class Slot:
-    day = str()
-    start_time = int()
-
     def __init__(self, day, start_time):
         self.day = day
         self.start_time = start_time
@@ -28,11 +25,6 @@ class Slot:
 
 
 class Section:
-    name = str()
-    timing = [Slot()]
-    capacity = int()
-    allotted = int()
-
     def __init__(self, name, capacity, timing):
         self.name = name
         self.capacity = capacity
