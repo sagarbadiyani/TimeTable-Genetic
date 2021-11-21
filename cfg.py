@@ -4,7 +4,11 @@ tt_parsed_df = None
 
 class Slot:
     day = str()
-    startTime = int()
+    start_time = int()
+
+    def __init__(self, day, start_time):
+        self.day = day
+        self.start_time = start_time
 
     def __repr__(self):
         return str(self)
@@ -16,7 +20,7 @@ class Slot:
         return str(self) < str(other)
 
     def __str__(self):
-        return self.day + ' ' + str(self.startTime)
+        return self.day + ' ' + str(self.start_time)
 
 
 class Section:
