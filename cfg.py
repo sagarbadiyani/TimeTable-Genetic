@@ -6,6 +6,16 @@ section_time_map = {}
 course_list_all = ['BITS F110 P', 'CHEM F110 P', 'PHY F110 P', 'MATH F113 L', 'MATH F113 T', 'BIO F110 P', 'BITS F112 L', 'ME F110 P', 'PHY F111 L', 'PHY F111 T', 'BIO F111 L' , 'BIO F111 T' , 'MATH F111 L', 'MATH F111 T', 'CHEM F111 L', 'CHEM F111 T']
 course_list_pure_eg = ['BITS F110 P', 'CHEM F110 P', 'PHY F110 P', 'MATH F113 T', 'MATH F113 L']
 course_list_pure_ws = ['BIO F110 P', 'BITS F112 L', 'ME F110 P', 'PHY F111 T', 'PHY F111 L']
+course_list_common = ['BIO F111 L', 'BIO F111 T', 'MATH F111 L', 'MATH F111 T', 'CHEM F111 L', 'CHEM F111 T']
+course_list_eg = course_list_pure_eg + course_list_common
+course_list_ws = course_list_pure_ws + course_list_common
+
+field_eg = []
+field_ws = []
+
+for i in range(20):
+    field_eg.append([])
+    field_ws.append([])
 
 
 class Slot:
