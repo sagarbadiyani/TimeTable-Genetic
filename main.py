@@ -1,5 +1,9 @@
+from preprocess import preprocess
+
+
 def main():
-    pass
+    preprocess()
+
 
 if __name__ == "__main__":
     main()
