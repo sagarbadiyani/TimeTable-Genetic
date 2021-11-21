@@ -1,6 +1,10 @@
 course_section_capacity_df = None
 tt_parsed_df = None
 
+section_time_map = {}
+
+course_list_all = ['BITS F110 P', 'CHEM F110 P', 'PHY F110 P', 'MATH F113 L', 'MATH F113 T', 'BIO F110 P', 'BITS F112 L', 'ME F110 P', 'PHY F111 L', 'PHY F111 T', 'BIO F111 L' , 'BIO F111 T' , 'MATH F111 L', 'MATH F111 T', 'CHEM F111 L', 'CHEM F111 T']
+
 
 class Slot:
     day = str()
