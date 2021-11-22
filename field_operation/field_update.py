@@ -1,7 +1,7 @@
 import copy
-import cfg
+from config import cfg
 
-from cfg import course_list_all, course_list_pure_eg, course_list_pure_ws, course_list_eg, course_list_ws
+from config.cfg import course_list_all, course_list_pure_eg, course_list_pure_ws, course_list_eg, course_list_ws
 
 
 def get_updated_field(arr):

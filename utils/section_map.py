@@ -1,6 +1,6 @@
-from cfg import course_list_all
+from config.cfg import course_list_all
 from utils.time_slot import get_time
-import cfg
+from config import cfg
 
 
 def create_section_map():

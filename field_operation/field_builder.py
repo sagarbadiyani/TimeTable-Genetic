@@ -1,6 +1,6 @@
-import cfg
+from config import cfg
 from utils.time_slot import get_time
-from cfg import Section
+from config.cfg import Section
 
 
 def build_field(field, course_list):

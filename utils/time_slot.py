@@ -1,5 +1,5 @@
-from cfg import Slot
-import cfg
+from config.cfg import Slot
+from config import cfg
 
 
 def get_time(course, section):

@@ -1,4 +1,4 @@
-from preprocess import preprocess
+from preprocessing.preprocess import preprocess
 from field_operation.field_update import get_updated_field
 from fitness.fitness import get_fitness
 

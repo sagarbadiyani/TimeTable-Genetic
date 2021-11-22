@@ -1,4 +1,4 @@
-import cfg
+from config import cfg
 
 from file_handling.section_capacity_parser import get_course_section_capacity_df
 from file_handling.tt_data_parser import get_parsed_tt_df
