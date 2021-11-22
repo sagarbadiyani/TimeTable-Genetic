@@ -27,12 +27,12 @@ def get_updated_field(arr):
     for idx, course in enumerate(updated_eg_course_list):
         index = course_list_eg.index(course)
         blob = copied_field_eg[index]
-        updated_field_eg[idx] = blob
+        updated_field_eg[idx] = copy.deepcopy(blob)
 
     for idx, course in enumerate(updated_ws_course_list):
         index = course_list_ws.index(course)
         blob = copied_field_ws[index]
-        updated_field_ws[idx] = blob
+        updated_field_ws[idx] = copy.deepcopy(blob)
 
     return {
         "course_list_eg": updated_eg_course_list,
