@@ -5,8 +5,7 @@ from fitness.fitness import get_fitness
 
 def main():
     preprocess()
-    arr = [15, 13, 12, 14, 11, 0, 6, 8, 7, 9, 5, 4, 3, 2, 1, 10]
-    # arr[::-1]
+    arr = [i for i in range(16)]
     updated_fields = get_updated_field_from_permutation(arr)
     fitness = get_fitness(updated_fields)
 

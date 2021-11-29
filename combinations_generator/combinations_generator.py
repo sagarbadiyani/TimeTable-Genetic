@@ -59,9 +59,7 @@ def path_build_helper(field, blob_index, end, path):
 
     for sec in field[blob_index]:
         path.append(sec)
-        is_valid = True
-        if (blob_index == end // 3) or (blob_index == (2*end) // 3):
-            is_valid = is_valid_path(path)
+        is_valid = is_valid_path(path)
         if is_valid:
             stop = path_build_helper(field, blob_index + 1, end, path)
             if stop:
