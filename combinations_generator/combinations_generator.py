@@ -46,7 +46,7 @@ def rem_part(capacity_array, field, number_of_courses, paths):
             idx = field[blob_index].index(section)
             field[blob_index].pop(idx)
         blob_index += 1
-    print('Length of path: {}'.format(len(path)))
+
     if len(path) > 0:
         paths.append(path)
         return True
