@@ -21,6 +21,7 @@ def _get_updated_indices_list(arr):
 
     return updated_eg_course_list, updated_eg_course_indices_list, updated_ws_course_list, updated_ws_course_indices_list
 
+
 def get_updated_field_from_permutation(arr):
     updated_eg_course_list, updated_eg_course_indices_list, updated_ws_course_list, updated_ws_course_indices_list = _get_updated_indices_list(arr)
 
