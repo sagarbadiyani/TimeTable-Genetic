@@ -2,8 +2,8 @@ import pandas as pd
 
 
 def print_combination(paths_eg, capacity_array_eg, paths_ws, capacity_array_ws):
-    print_combination_helper(data=paths_eg, capacity=capacity_array_eg, filename="./data/out/EG_Combinations.xlsx")
-    print_combination_helper(data=paths_ws, capacity=capacity_array_ws, filename="./data/out/WS_Combinations.xlsx")
+    print_combination_helper(data=paths_eg, capacity=capacity_array_eg, filename="./results/combinations/EG_Combinations.xlsx")
+    print_combination_helper(data=paths_ws, capacity=capacity_array_ws, filename="./results/combinations/WS_Combinations.xlsx")
 
 
 def print_combination_helper(data, capacity, filename):
