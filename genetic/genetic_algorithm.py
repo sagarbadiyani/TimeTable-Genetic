@@ -25,7 +25,7 @@ def _mutate(child):
         c1 = random.randint(0, len(cfg.course_list_all) - 1)
         c2 = random.randint(0, len(cfg.course_list_all) - 1)
         child.arr[c1], child.arr[c2] = child.arr[c2], child.arr[c1]
-        child.fitness = child.get_fitness()
+        child.fitness = child.get_fitness_score()
     return child
 
 
@@ -62,17 +62,7 @@ def _genetic_algorithm(population_size, population, mutate_func, rep_func, times
     return generations, path
 
 
-def start():
+def start(epochs):
     population_size = 20
     population = [FieldState([i for i in range(len(cfg.course_list_all))]) for i in range(population_size)]
-    generations, path = _genetic_algorithm(20, population, _mutate, _standard_reproduce, 10)
-
-    print(f'The best path from Standard is {path} and its cost is {path.fitness}')
-
-    from matplotlib import pyplot as plt
-    plt.plot(generations, 'blue')
-    plt.xlabel("Generations")
-    plt.ylabel("Cost")
-    plt.legend(['Standard'])
-    plt.title('Genetic Algorithm')
-    plt.show()
+    return _genetic_algorithm(20, population, _mutate, _standard_reproduce, epochs)
