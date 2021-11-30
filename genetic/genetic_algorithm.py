@@ -32,7 +32,7 @@ def _mutate(child):
 def _get_parents(population):
     offset = min([person.fitness for person in population])
     if offset > 100:
-        offset -= 100
+        offset -= 20
     weights = [person.fitness - offset for person in population]
     return random.choices(population, weights, k=2)
 
@@ -62,6 +62,7 @@ def _genetic_algorithm(population_size, population, mutate_func, rep_func, times
                     path = person
         generations.append(most_fit_person_fitness)
         print(f"Generation {i}'s most fit person has fitness {most_fit_person_fitness}")
+        print(f"Best path till now: {path.arr} | Fitness Score: {path.fitness}")
     return generations, path
 
 

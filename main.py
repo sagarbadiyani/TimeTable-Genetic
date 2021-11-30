@@ -5,7 +5,7 @@ from preprocessing.preprocess import preprocess
 
 def main():
     preprocess()
-    generations, path = genetic_algorithm.start(epochs=5)
+    generations, path = genetic_algorithm.start(epochs=500)
     printer.print_results(generations, path)
 
 
